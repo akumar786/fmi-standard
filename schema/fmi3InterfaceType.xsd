@@ -38,6 +38,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <xs:complexType name="fmi3InterfaceType" abstract="true">
         <xs:sequence minOccurs="0">
             <xs:element ref="Annotations" minOccurs="0"/>
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="modelIdentifier" type="xs:normalizedString" use="required"/>
         <xs:attribute name="needsExecutionTool" type="xs:boolean" default="false"/>

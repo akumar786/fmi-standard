@@ -51,6 +51,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3RealBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Float32Attributes"/>
                         </xs:extension>
@@ -61,6 +64,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3RealBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Float64Attributes"/>
                         </xs:extension>
@@ -71,6 +77,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Int8Attributes"/>
                         </xs:extension>
@@ -81,6 +90,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3UInt8Attributes"/>
                         </xs:extension>
@@ -91,6 +103,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Int16Attributes"/>
                         </xs:extension>
@@ -101,6 +116,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3UInt16Attributes"/>
                         </xs:extension>
@@ -111,6 +129,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Int32Attributes"/>
                         </xs:extension>
@@ -121,6 +142,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3UInt32Attributes"/>
                         </xs:extension>
@@ -131,6 +155,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3Int64Attributes"/>
                         </xs:extension>
@@ -141,6 +168,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3UInt64Attributes"/>
                         </xs:extension>
@@ -150,14 +180,22 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:element name="BooleanType">
                 <xs:complexType>
                     <xs:complexContent>
-                        <xs:extension base="fmi3TypeDefinitionBase"/>
+                        <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
+                        </xs:extension>
                     </xs:complexContent>
                 </xs:complexType>
             </xs:element>
             <xs:element name="StringType">
                 <xs:complexType>
                     <xs:complexContent>
-                        <xs:extension base="fmi3TypeDefinitionBase"/>
+                        <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
+                        </xs:extension>
                     </xs:complexContent>
                 </xs:complexType>
             </xs:element>
@@ -165,6 +203,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attribute name="mimeType" type="xs:normalizedString" default="application/octet-stream"/>
                             <xs:attribute name="maxSize" type="xs:nonNegativeInteger"/>
                         </xs:extension>
@@ -175,17 +216,19 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
-                            <xs:sequence maxOccurs="unbounded">
-                                <xs:element name="Item">
+                            <xs:sequence>
+                                <xs:element name="Item" maxOccurs="unbounded">
                                     <xs:complexType>
                                         <xs:sequence>
                                             <xs:element ref="Annotations" minOccurs="0"/>
+                                            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                         </xs:sequence>
                                         <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                         <xs:attribute name="value" type="xs:long" use="required"/>
                                         <xs:attribute name="description" type="xs:string"/>
                                     </xs:complexType>
                                 </xs:element>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                             </xs:sequence>
                             <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                             <xs:attributeGroup ref="fmi3EnumerationAttributes"/>
@@ -197,6 +240,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <xs:complexType>
                     <xs:complexContent>
                         <xs:extension base="fmi3TypeDefinitionBase">
+                            <xs:sequence>
+                                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
                             <xs:attributeGroup ref="fmi3ClockAttributes"/>
                         </xs:extension>
                     </xs:complexContent>

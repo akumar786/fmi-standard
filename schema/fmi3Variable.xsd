@@ -146,6 +146,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3FloatVariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3RealBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Float32Attributes"/>
@@ -163,6 +164,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3FloatVariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3RealBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Float64Attributes"/>
@@ -180,6 +182,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Int8Attributes"/>
@@ -196,6 +199,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3UInt8Attributes"/>
@@ -212,6 +216,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Int16Attributes"/>
@@ -228,6 +233,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3UInt16Attributes"/>
@@ -244,6 +250,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Int32Attributes"/>
@@ -260,6 +267,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3UInt32Attributes"/>
@@ -276,6 +284,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3Int64Attributes"/>
@@ -292,6 +301,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3UInt64Attributes"/>
@@ -308,6 +318,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3InitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attribute name="start">
                     <xs:simpleType>
@@ -327,6 +338,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         </xs:complexType>
                     </xs:element>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -341,6 +353,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         </xs:complexType>
                     </xs:element>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attribute name="mimeType" type="xs:normalizedString" default="application/octet-stream"/>
                 <xs:attribute name="maxSize" type="xs:nonNegativeInteger"/>
@@ -352,6 +365,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3MandatorilyTypedInitializableVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3IntegerBaseAttributes"/>
                 <xs:attributeGroup ref="fmi3EnumerationAttributes"/>
@@ -368,6 +382,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <xs:extension base="fmi3TypedVariable">
                 <xs:sequence>
                     <xs:element name="Alias" type="fmi3VariableAlias" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:attributeGroup ref="fmi3ClockAttributes"/>
             </xs:extension>

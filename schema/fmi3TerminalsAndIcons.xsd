@@ -60,6 +60,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 </xs:complexType>
                             </xs:element>
                             <xs:element ref="Annotations" minOccurs="0"/>
+                            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -71,6 +72,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     </xs:complexType>
                 </xs:element>
                 <xs:element ref="Annotations" minOccurs="0"/>
+                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="fmiVersion" use="required">
                 <xs:simpleType>

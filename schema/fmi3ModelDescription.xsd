@@ -65,6 +65,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element ref="Annotations" minOccurs="0"/>
+                                        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                     </xs:sequence>
                                     <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                     <xs:attribute name="description" type="xs:string"/>
@@ -77,6 +78,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element ref="Annotations" minOccurs="0"/>
+                            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                         </xs:sequence>
                         <xs:attribute name="startTime" type="xs:double"/>
                         <xs:attribute name="stopTime" type="xs:double"/>
@@ -101,6 +103,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     </xs:complexType>
                 </xs:element>
                 <xs:element ref="Annotations" minOccurs="0"/>
+                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="fmiVersion" fixed="3.0-beta.3" use="required"/>
             <xs:attribute name="modelName" type="xs:string" use="required"/>

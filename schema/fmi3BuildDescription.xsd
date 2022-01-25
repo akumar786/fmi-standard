@@ -48,6 +48,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element ref="Annotations" minOccurs="0"/>
+                                                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                                 <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                             </xs:complexType>
@@ -62,6 +63,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                                         </xs:complexType>
                                                     </xs:element>
                                                     <xs:element ref="Annotations" minOccurs="0"/>
+                                                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                                 <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                                 <xs:attribute name="optional" type="xs:boolean" default="false"/>
@@ -73,11 +75,13 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element ref="Annotations" minOccurs="0"/>
+                                                    <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                                 <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element ref="Annotations" minOccurs="0"/>
+                                        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                     </xs:sequence>
                                     <xs:attribute name="name" type="xs:normalizedString"/>
                                     <xs:attribute name="language" type="xs:normalizedString"/>
@@ -89,6 +93,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element ref="Annotations" minOccurs="0"/>
+                                        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                                     </xs:sequence>
                                     <xs:attribute name="name" type="xs:normalizedString" use="required"/>
                                     <xs:attribute name="version" type="xs:normalizedString"/>
@@ -97,6 +102,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 </xs:complexType>
                             </xs:element>
                             <xs:element ref="Annotations" minOccurs="0"/>
+                            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
                         </xs:sequence>
                         <xs:attribute name="modelIdentifier" type="xs:normalizedString" use="required"/>
                         <xs:attribute name="platform" type="xs:normalizedString"/>
@@ -104,6 +110,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     </xs:complexType>
                 </xs:element>
                 <xs:element ref="Annotations" minOccurs="0"/>
+                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="fmiVersion" use="required">
                 <xs:simpleType>
